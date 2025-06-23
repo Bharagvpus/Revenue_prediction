@@ -1,0 +1,70 @@
+
+<html>
+<head>
+    <title>Shopper Intention Predictor</title>
+</head>
+<body>
+    <h2>Enter Shopper Data</h2>
+    <form method="post" action="/predict">
+        <label>Administrative:</label><br>
+        <input type="number" name="Administrative" step="any" required><br><br>
+
+        <label>Administrative_Duration:</label><br>
+        <input type="number" name="Administrative_Duration" step="any" required><br><br>
+
+        <label>Informational:</label><br>
+        <input type="number" name="Informational" step="any" required><br><br>
+
+        <label>Informational_Duration:</label><br>
+        <input type="number" name="Informational_Duration" step="any" required><br><br>
+
+        <label>ProductRelated:</label><br>
+        <input type="number" name="ProductRelated" step="any" required><br><br>
+
+        <label>ProductRelated_Duration:</label><br>
+        <input type="number" name="ProductRelated_Duration" step="any" required><br><br>
+
+        <label>BounceRates:</label><br>
+        <input type="number" name="BounceRates" step="any" required><br><br>
+
+        <label>ExitRates:</label><br>
+        <input type="number" name="ExitRates" step="any" required><br><br>
+
+        <label>PageValues:</label><br>
+        <input type="number" name="PageValues" step="any" required><br><br>
+
+        <label>SpecialDay:</label><br>
+        <input type="number" name="SpecialDay" step="any" required><br><br>
+
+        <label>OperatingSystems:</label><br>
+        <input type="number" name="OperatingSystems" step="any" required><br><br>
+
+        <label>Browser:</label><br>
+        <input type="number" name="Browser" step="any" required><br><br>
+
+        <label>Region:</label><br>
+        <input type="number" name="Region" step="any" required><br><br>
+
+        <label>TrafficType:</label><br>
+        <input type="number" name="TrafficType" step="any" required><br><br>
+
+        <label>Weekend (0 or 1):</label><br>
+        <input type="number" name="Weekend" step="any" min="0" max="1" required><br><br>
+
+        <label>New_Visitor (0 or 1):</label><br>
+        <input type="number" name="New_Visitor" min="0" max="1" required><br><br>
+
+        <label>Other (0 or 1):</label><br>
+        <input type="number" name="Other" min="0" max="1" required><br><br>
+
+        <label>Returning_Visitor (0 or 1):</label><br>
+        <input type="number" name="Returning_Visitor" min="0" max="1" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>

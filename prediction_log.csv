@@ -1,0 +1,2 @@
+Administrative,Administrative_Duration,Informational,Informational_Duration,ProductRelated,ProductRelated_Duration,BounceRates,ExitRates,PageValues,SpecialDay,OperatingSystems,Browser,Region,TrafficType,Weekend,New_Visitor,Other,Returning_Visitor,Prediction
+1.0,1.0,2.0,3.0,2.0,1.0,2.0,1.0,2.0,4.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,Likely to Purchase
